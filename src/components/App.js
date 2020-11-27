@@ -9,7 +9,7 @@ const App = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  const [welcomeMsg, setWelcomeMsg] = useState("");
+  const [welcomeMsg, setWelcomeMsg] = useState("Hello ");
   const validateInputs = () => {
     if (name === "" || email === "" || phoneNumber === "" || password === "") {
       setError("All fields are mandatory");
@@ -47,6 +47,7 @@ const App = () => {
     return;
   };
   const handleSubmit = () => {
+    setWelcomeMsg("");
     if (!validateInputs()) {
       return;
     }

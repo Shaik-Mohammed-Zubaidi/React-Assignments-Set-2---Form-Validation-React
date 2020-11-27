@@ -54,7 +54,7 @@ const App = () => {
   };
   return (
     <div id="main">
-      {welcomeMsg !== "" && <h1>{welcomeMsg}</h1>}
+      <h1>{welcomeMsg}</h1>
       <h3>Registration Form </h3>
       Enter Your Name:{" "}
       <input
